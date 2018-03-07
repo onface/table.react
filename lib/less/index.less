@@ -1,0 +1,83 @@
+@import "./settings.less";
+.@{face-table-prefix} {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    // border:1px solid #ebebeb;
+    // border-radius: .1em;
+    // overflow: hidden;
+}
+.@{face-table-prefix}-thead {}
+.@{face-table-prefix}-thead-tr {}
+.@{face-table-prefix}-th {
+    background-color: #fafafa;
+    text-align: left;
+    color:rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #ebebeb;
+    font-size: 1em;
+    padding:.5em 1em;
+    font-weight: 400;
+}
+.@{face-table-prefix}-th-filter {
+    color:gray;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 300;
+    &:hover {
+        color: #4387fd;
+    }
+}
+.@{face-table-prefix}-td {
+    padding:.625em 1.25em;
+}
+.@{face-table-prefix}-tbody {}
+.@{face-table-prefix}-tr {
+    &:last-child {
+        border:none;
+    }
+    &:nth-child(odd) {
+        td {
+            // background-color: #fcfeff;
+        }
+    }
+}
+.@{face-table-prefix}-tr--open {
+    .@{face-table-prefix}-td {
+        border-bottom: none;
+    }
+}
+.@{face-table-prefix}-td {
+    font-weight: 300;
+    color:rgba(0, 0, 0, 0.65);
+    background-color: white;
+    border-bottom: 1px solid #efefef;
+    font-size: .8em;
+}
+.@{face-table-prefix}-td-switch {
+    cursor: pointer;
+    display: inline-block;
+    min-width: 1em;
+}
+.@{face-table-prefix}-sub-tr {
+    border-bottom: 1px solid #efefef;
+}
+.@{face-table-prefix}-sub-td {
+    padding-bottom: .5em;
+    .@{face-table-prefix}-th {
+        // background-color:white;
+    }
+    .@{face-table-prefix}-th,
+    .@{face-table-prefix}-td {
+        border: 1px solid #ebebeb;
+    }
+    .@{face-table-prefix}-wrap {
+        font-size: .8em;
+    }
+}
+.@{face-table-prefix}-td-empty {
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
