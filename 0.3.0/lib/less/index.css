@@ -1,0 +1,63 @@
+.face-table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.face-table-th {
+  background-color: #fafafa;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #ebebeb;
+  font-size: 1em;
+  padding: .5em 1em;
+  font-weight: 400;
+}
+.face-table-th-filter {
+  color: gray;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 300;
+}
+.face-table-th-filter:hover {
+  color: #4387fd;
+}
+.face-table-td {
+  padding: .625em 1.25em;
+}
+.face-table-tr:last-child {
+  border: none;
+}
+.face-table-tr--open .face-table-td {
+  border-bottom: none;
+}
+.face-table-td {
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: white;
+  border-bottom: 1px solid #efefef;
+  font-size: .8em;
+}
+.face-table-td-switch {
+  cursor: pointer;
+  display: inline-block;
+  min-width: 1em;
+}
+.face-table-sub-tr {
+  border-bottom: 1px solid #efefef;
+}
+.face-table-sub-td {
+  padding-bottom: .5em;
+}
+.face-table-sub-td .face-table-th,
+.face-table-sub-td .face-table-td {
+  border: 1px solid #ebebeb;
+}
+.face-table-sub-td .face-table-wrap {
+  font-size: .8em;
+}
+.face-table-td-empty {
+  font-size: 1.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
