@@ -1,7 +1,7 @@
 {
     "name": "table.react",
     "main": "lib/index.js",
-    "version": "0.3.2",
+    "version": "0.4.0",
     "description": "table react",
     "keywords": "",
     "scripts": {
@@ -19,6 +19,7 @@
     "$repository": "table.react",
     "dependencies": {
         "prop-types": "^15.6.0",
+        "react-spread-props": "^0.1.1",
         "util.react": "^1.4.1"
     },
     "devDependencies": {

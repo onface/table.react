@@ -40,7 +40,7 @@ class Basic extends React.Component {
                         {
                             title: '操作',
                             key: 'action',
-                            render: function (item) {
+                            render: function (action, item) {
                                 return (
                                     <Button size="small" >
                                         删除
@@ -68,10 +68,41 @@ class Basic extends React.Component {
                     ]}
                     columns={[
                         {
-                            title: function (item) {
+                            title: function (rowData, item) {
                                 return (<em>姓名-{item.key}</em>)
                             },
                             key: 'name'
+                        }
+                    ]}
+                />
+                <Table
+                    data={[
+                        {
+                            name: 'nimo',
+                            age: 12
+                        },
+                        {
+                            name: 'nico',
+                            age: 24
+                        }
+                    ]}
+                    columns={[
+                        {
+                            title: '姓名',
+                            key: 'name'
+                        },
+                        {
+                            key: 'age',
+                            // th style
+                            style: {color: 'red'},
+                            className: 'th-some',
+                            title: function (rowData) {
+                                // rowData: [12, 24]
+                                var ageSum = rowData.reduce(function (pre, cur) {
+                                    return pre + cur
+                                })
+                                return '年龄（' + ageSum + ')'
+                            }
                         }
                     ]}
                 />
